@@ -1,6 +1,7 @@
 function onScanSuccess(qrCodeMessage) {
     console.log(qrCodeMessage);
-    const text = CryptoJS.AES.decrypt(qrCodeMessage,"00000000000000000000005x8w5z6w8q")
+    const text = CryptoJS.AES.decrypt(qrCodeMessage, "00000000000000000000005x8w5z6w8q")
+    resultContainer.innerText = qrCodeMessage;
     console.log(text);
 }
 var html5QrcodeScanner = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 });
