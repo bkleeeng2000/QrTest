@@ -5,6 +5,6 @@ function onScanSuccess(qrCodeMessage) {
     console.log(text);
 }
 var html5QrcodeScanner = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 });
-var resultContainer = document.getElementById('reaader-result');
+var resultContainer = document.getElementById('reader-result');
 html5QrcodeScanner.render(onScanSuccess);
 
