@@ -1,7 +1,7 @@
 function onScanSuccess(qrCodeMessage) {
     html5QrcodeScanner.clear();
     resultContainer.innerText = qrCodeMessage;
-    fetch("/crypto", {
+    fetch("http://bkleeeng2000.iptime.org:3000/crypto", {
         method: "Post",
         headers: {
             "Content-Type": "application/json"
